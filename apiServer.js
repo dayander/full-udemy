@@ -9,8 +9,8 @@ app.use(cookieParser());
 
 // APIs
 var mongoose = require('mongoose');
-
-mongoose.connect('mongodb://dayander:Burton12!@ds119223.mlab.com:19223/bookshop');
+//connect to remote database
+mongoose.connect('mongodb://<username>:<password>!@<database_path>');
 // mongoose.connect('mongodb://localhost:27017/test');
 var Books = require('./models/books.js');
 
